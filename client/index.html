@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="favicon.ico">
+			
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/client/style.css">
+
+		<title>Multiplayer game</title>
+	
+	</head>
+		
+	<body id="body">
+		<div id="header">
+			<div id="welcomeDiv"></div>
+			<div id="loginDiv">
+				<form id="loginForm">
+					<div class="table">
+						<span class="tr">
+							<span class="td">Username:</span><span class="td"><input type="text" name="name" id="usernameInput" class="inputbox"></input></span>
+						</span>
+						<span class="tr">
+							<span class="td">Password:</span><span class="td"><input type="password" name="name" id="passwordInput" class="inputbox"></input></span>
+						</span>
+						<span class="tr">
+							<span class="td">&nbsp;</span><span class="td"><button id="loginButton">Login</button>&nbsp;<button id="signupButton">Sign up</button></span>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		 
+		<div id="chatDiv">
+			<div id="chatHeader">
+				Chat
+			</div>
+			<div id="chatText">
+				
+			</div>
+			<form id="chatForm">
+				<input  type="text" id="chatInput" class="inputbox"></input>
+			</form>
+		</div>
+		
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script src="/client/js/client.js"></script>
+		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	</body>	
+</html>	
+		
