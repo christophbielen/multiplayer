@@ -1,134 +1,109 @@
-#body{
-	margin:0;
-	background:#221947;
+/*Body*/
+
+html, body {
+	margin: 0; 
+	height: 100%; 
+	overflow-x: hidden;
 }
 
-#header {
-	position:absolute;
-	top:0;
-	left:0;
+#body {
+	padding:0;
+	background-color:#000000;
+	color:#ffffff;
 	width:100%;
-	height:8em;
-	background:#050425;
-	background: -webkit-linear-gradient(#050425, #444169); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#050425, #444169); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#050425, #444169); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#050425, #444169); /* Standard syntax */
-	border-radius:1em;
+	height:100%;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
-#welcomeDiv {
-	position:absolute;
-	top:0;
-	left:0;
-	padding:0.75em;
+
+#game-container {
+  margin: 0;
+  padding: 0;
 }
 
-#loginDiv{
-	position:absolute;
-	right:1em;
-	top:1em;
-	color:#aaaaaa;
-	font-weight:bold;
-} 
-
-.table {
-    display:table;
-}
-.tr{
-    display:table-row;
-	padding:1px;
+#game-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.td{
-    display:table-cell;
-	padding:1px;
-}
 
-#loginButton{
-	border-color:lightblue;
-	height:2em;
-	border-radius: 10px;
-	background-color:#318ae8;
-	font-weight:bold;
-	font-size:1em;
-	color: #221947;
-}
-
-#signupButton{
-	border-color:lightblue;
-	height:2em;
-	border-radius: 10px;
-	background-color:#318ae8;
-	font-weight:bold;
-	font-size:1em;
-	color: #221947;
-}
-
-.title{
-	color:#aaaaaa;
-	font-size:2em;
-	margin:0;
-}
-
-#chatDiv{
-	position:absolute;
-	left:0;
-	bottom:0;
+/* Sign Div */
+#signContainerDiv {
+	background-color:#000000;
 	width:100%;
+	height:100%;
+
 }
 
-#chatHeader{
-	border-radius:1em;
-	background:#050425;
-	background: -webkit-linear-gradient(#050425, #444169); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#050425, #444169); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#050425, #444169); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#050425, #444169); /* Standard syntax */
-	color:#aaaaaa;
-	font-weight:bold;
-	padding:1em;
+#signDiv {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);	
 }
 
-#chatText{
-	width:auto;
-	height:150px;
-	overflow-y:auto;
-	background: white;
-    background: -webkit-linear-gradient(lightblue, #ffffff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(lightblue, #ffffff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(lightblue, #ffffff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(lightblue, #ffffff); /* Standard syntax */
-	color:#555555;
-	border:1px solid #bbbbbb;
-	border-radius:1em;
-	padding:1em;
+#chatDiv {
+	position:absolute;
+	bottom: 0px;
+	background-color:#ffffff;
+	width:34%;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:0.7em;
+	height:10em;
+	visibility: hidden;
+
+}
+
+#chatTextDiv{
+	position:absolute;
+	top: 0px;
+	width:100%;
+	background-color:#ffffff;
+	color:#000000;
+	overflow-y:scroll;
+	height:8.6em;
+	padding:0.2em;
 }
 
 #chatInput{
-	width:98%;
-	padding:0.5em;
+	position:absolute;
+	bottom: 0px;
+	border-top: 1px solid #000000;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	width:100%;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1em;
+	padding:0.2em;
 }
 
 
-.name{
-	font-weight:bold;
-	color:#000000;
+	
+/* General styles */
+
+/* Button styles */
+
+.activeButton:hover{
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 10px 0 rgba(0,0,0,0.19);
 }
 
-.chatmsg{
-	padding-left:3em;
+.activeButton:active{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+	transform: translateY(2px);
 }
 
-.inputbox{
-	border:1px solid #999999;
-	border-radius:0.5em;
-	padding:0.5em;
-	background: white;
-    background: -webkit-linear-gradient(#dddddd, #ffffff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#dddddd, #ffffff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#dddddd, #ffffff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#dddddd, #ffffff); /* Standard syntax */
+.activeButton{
+	background:#7799bb;
 }
 
-.inputbox:focus {outline:0;}
+.inactiveButton {
+	background:#cccccc;
+}

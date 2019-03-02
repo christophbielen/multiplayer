@@ -1,13 +1,27 @@
 {
-  "name": "app.js",
+  "name": "multiplayer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Multiplayer game",
   "main": "app.js",
-  "dependencies": {},
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "express": "^4.13.4",
+    "mongodb": "^3.1.13",
+    "mongojs": "^2.6.0",
+    "socket.io": "^1.7.4"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophbielen/multiplayer.git"
+  },
+  "author": "Christoph Bielen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christophbielen/multiplayer/issues"
+  },
+  "homepage": "https://github.com/christophbielen/multiplayer#readme"
 }
